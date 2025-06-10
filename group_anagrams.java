@@ -26,4 +26,21 @@ class Solution {
         // Convert map values (lists of anagrams) to result format
         return new ArrayList<>(map.values());
     }
+
+    public static void main(String args[]){
+    Solution sol= new Solution();
+      // Test input
+        String[] input = {"eat", "tea", "tan", "ate", "nat", "bat"};
+
+        // Get grouped anagrams
+        List<List<String>> result = sol.groupAnagrams(input);
+
+        for(List<String> g:result){
+            System.out.println(g);
+            
+        }
+
+    }
 }
+
+
